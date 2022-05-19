@@ -45,8 +45,8 @@ def num_check(question):
             # ask user for a number
             response = int(input(question))
             
-            # checks number is more than 0
-            if response <= 200:
+            # checks number is more than 0 and between 0-200
+            if response in range(1, 201):
                 return response
             
             #outputs error if input is invalid 
